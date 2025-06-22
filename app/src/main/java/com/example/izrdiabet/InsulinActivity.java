@@ -1,5 +1,6 @@
 package com.example.izrdiabet;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -69,6 +70,12 @@ public class InsulinActivity extends AppCompatActivity {
         // Вывод результата
         tvResult.setText(String.format("Доза инсулина: %.2f ЕД", totalDose));
         }
+
+    public void openMainActivity(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }
 
 

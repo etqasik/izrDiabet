@@ -1,6 +1,8 @@
 package com.example.izrdiabet;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,10 @@ public class AboutActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void openMainActivity(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+
     public void openDiaryActivity(View view) {
 
         Intent intent = new Intent(this, DiaryActivity.class);
